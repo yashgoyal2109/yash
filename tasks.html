@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="taskstyle.css">
+    <script src="tasks.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="up">
+            <div class="left">
+                <!-- <img src="assets pro/asset 0.1.svg" alt="" height="30rem" id="bars"> -->
+                <p class="text">TASKOPIA</p>
+                <div class="create">
+                    <img src="assets pro/asset 0.2.svg" alt="" height="20rem" id="plus">
+                    <p class="text1">Create</p>
+                </div>
+            </div>
+            <div class="center">
+                <div class="search">
+                    <img src="assets pro/asset 0.3.svg" alt="" height="20rem" id="searchicon">
+                    <p class="text2">Search</p>
+                </div>
+            </div>
+            <div class="right">
+                <a href="index.html"><img src="assets pro/home.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="toplow">
+                <div class="left1">
+                    <div class="barimage">
+                        <img src="assets pro/menu.svg" alt="" height="30rem">
+                    </div>
+                    <div class="lowtext">
+                        Track work requests
+                    </div>
+                    <div class="images">
+                        <img src="assets pro/chevron-down.svg" alt="" width="20rem">
+                        <img src="assets pro/star.svg" alt="" width="20rem">
+                        <div class="imgtext">
+                            <img src="assets pro/circle.svg" alt="" width="15rem">
+                            <p>Set Status</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right1">
+                    <p class="proficon" id="prof"></p>
+                    <p class="share">Share</p>
+                    <div class="customize">
+                        <img src="assets pro/customize_12.svg" alt="" width="20rem">
+                        <p class="custtext">Customize</p>
+                    </div>
+                </div>
+            </div>
+            <div class="minichanges">
+                <ul class="task-wrapper">
+                    <li class="mini1" >
+                        <img src="assets pro/clipboard-check.svg" alt="">
+                        <a class="mini1text" href="#test1" onclick="route()">Overview</a>
+                    </li>
+                    <li class="mini1">
+                        <img src="assets pro/list-todo.svg" alt="">
+                        <a class="mini1text" href="#test2" onclick="route()">List</a>
+                    </li>
+                    <li class="mini1" id="vanished">
+                        <img src="assets pro/bar-chart-horizontal-big.svg" alt="">
+                        <a class="mini1text" href="#test3" onclick="route()">Dashboard</a>
+                    </li>
+                    <li class="mini1" id="vanished">
+                        <img src="assets pro/message-circle-more.svg" alt="">
+                        <a class="mini1text" href="#test4" onclick="route()">Message</a>
+                    </li>
+                    <li class="mini1" id="vanished">
+                        <img src="assets pro/paperclip.svg" alt="">
+                        <a class="mini1text" href="#test5" onclick="route()">Files</a>
+                    </li>
+                    <li class="mini1">
+                        <p class="vanish">
+                            And 5 more....
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="main-page">
+
+
+
+
+                <div id="test1">
+                    <div class="ocontainer">
+                        <div class="owrapper">
+                            <div class="descrip">
+                                <p class="descriptext">Project description</p>
+                                <textarea name="" class="descriparea" cols="30" rows="10"></textarea>
+
+                                <p class="descriptext">Project Roles</p>
+                                <div class="roles">
+                                    <div class="plusimg">
+                                        <img src="../feeproject2/assets pro/asset 0.2.svg" alt="" width="30rem"
+                                            height="30rem" id="oplusimg">
+                                        <p class="roletext">Add members</p>
+                                    </div>
+                                    <div class="proficon1">
+                                        <p class="proficon">YG</p>
+                                        <div class="nametext">
+                                            <p class="roletext">Yash Goyal</p>
+                                            <p
+                                                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #a2a0a2;">
+                                                Project Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <p class="descriptext">Connected goals</p>
+                                <div class="obox">
+                                    <div class="oimg">
+                                        <img src="../feeproject2/assets pro/shooting_target.svg" alt="" width="100rem"
+                                            height="100rem">
+                                    </div>
+                                    <div class="nametext">
+                                        <pre class="roletext">Connect or create a goal to link this project 
+            to a larger purpose.</pre>
+                                        <p class="roletext2"
+                                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #a2a0a2;">
+                                            Add goal</p>
+                                    </div>
+                                </div>
+
+
+
+                                <p class="descriptext">Connected portfolios</p>
+                                <div class="obox">
+                                    <div class="oimg">
+                                        <img src="../feeproject2/assets pro/organization_structure_dark_mode.svg" alt=""
+                                            width="100rem" height="100rem">
+                                    </div>
+                                    <div class="nametext">
+                                        <pre class="roletext">Connect a portfolio to link this project 
+            to a larger body of work.</pre>
+                                        <p class="roletext2"
+                                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #a2a0a2;">
+                                            Add to portfolio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="test2">
+                    <div class="lcontainer">
+                        <div class="lwrapper">
+                            <!-- <div class="addtask"> -->
+                            <div class="buttons">
+                                <div class="plus">
+                                    <img src="../feeproject2/assets pro/asset 0.2.svg" width="20rem" height="20rem"
+                                        alt="">
+                                    <p class="addtasktext">Add task</p>
+                                </div>
+                                <div class="delete">
+                                    <img src="../feeproject2/assets pro/asset 0.2.svg" width="20rem" height="20rem"
+                                        alt="">
+                                    <p class="addtasktext">Delete All</p>
+                                </div>
+                            </div>
+                            <div class="tasks">
+
+                                <input type="text" class="taskadd">
+                                <!-- <ul class="tasklist"></ul> -->
+                                <table>
+                                    <tr>
+                                        <th>Task Name</th>
+                                        <th>Status</th>
+                                        <th>Priority</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    <tbody class="tasklist"></tbody> <!-- Change here -->
+                                </table>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="test3">
+                    <div class="dcontainer">
+                        <div class="chartadd">
+                            <div class="addbtn">
+                                <p class="addtext">Add Chart</p>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="dmain">
+                            <div class="box1">
+                                <p class="boxtext1">Completed Tasks</p>
+                                <p class="boxtext2">0</p>
+                                <p class="boxtext3">Filter</p>
+                            </div>
+                            <div class="box1">
+                                <p class="boxtext1">Incompleted Tasks</p>
+                                <p class="boxtext2">0</p>
+                                <p class="boxtext3">Filter</p>
+                            </div>
+                            <div class="box1">
+                                <p class="boxtext1">Overdue Tasks</p>
+                                <p class="boxtext2">0</p>
+                                <p class="boxtext3">Filter</p>
+                            </div>
+                            <div class="box1">
+                                <p class="boxtext1">Total Tasks</p>
+                                <p class="boxtext2">0</p>
+                                <p class="boxtext3">Filter</p>
+                            </div>
+                        </div>
+                        <div class="charts">
+                            <div class="chart1">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                            <div class="chart1">
+                                <canvas id="doughnutchart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="test4">
+                    <div class="mcontainer">
+                        <div class="mwrapper">
+                            <div class="send">
+                                <p class="logo">YG</p>
+                                <div class="msgbox" style="width: 90%; height: 30%;">
+                                    <input class="mssg" placeholder=" Send message to members"></input>
+                                </div>
+                            </div>
+                            <div class="connect">
+                                <img src="../feeproject2/assets pro/two_people_conversation_bubble.svg" alt="">
+                                <p class="conntext">Connect your works to your work
+                                    <br>
+                                    Send a message to kick off projects. Or discuss tasks. Or brainstorm ideas. You can
+                                    also send messages from your email to project
+                                </p>
+                                <!-- <p class="conntext"></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="test5">
+                    <div class="container">
+                        <div class="files">
+                            <img src="../feeproject2/assets pro/attachment.svg" alt="" height="200rem">
+                            <p class="text">All attachments to tasks and messages in this project will appear here.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
