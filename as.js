@@ -9,7 +9,10 @@ const create = document.querySelector(".create")
 const drop = document.querySelector(".dropdown")
 const username = document.querySelector(".username")
 const logout = document.querySelector("#log-out")
+const uptext=document.querySelector("#ongoing")
 
+
+uptext.innerHTML=localStorage.getItem("totaled");
 
 username.textContent = localStorage.getItem("user")
 
@@ -71,41 +74,8 @@ const formattedDate = currentDate.toLocaleDateString('en-US', options);
 date.textContent = formattedDate;
 
 
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-
-//     // If we need pagination
-//     // pagination: {
-//     //     el: '.swiper-pagination',
-//     // },
-
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     breakpoints: {
-//         640: {
-//           slidesPerView: 1,
-//           spaceBetween: 20
-//         },
-//         1024: {
-//           slidesPerView: 1,
-//           spaceBetween: 20
-//         }
-//       }
-
-//     // And if we need scrollbar
-//     // scrollbar: {
-//     //     el: '.swiper-scrollbar',
-//     // },
-// });
 
 const swiper = new Swiper(".swiper-slider", {
-  // Optional parameters
   centeredSlides: true,
   slidesPerView: 1,
   grabCursor: true,
@@ -116,16 +86,13 @@ const swiper = new Swiper(".swiper-slider", {
     enabled: true
   },
 
-  // Enabled autoplay mode
-
-
-  // If we need navigation
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
 
-  // Responsive breakpoints
+
+
   breakpoints: {
     940: {
       slidesPerView: 1.25,

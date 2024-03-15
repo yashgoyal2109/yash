@@ -14,7 +14,6 @@
     <div class="container">
         <div class="up">
             <div class="left">
-                <!-- <img src="assets pro/asset 0.1.svg" alt="" height="30rem" id="bars"> -->
                 <p class="text">TASKOPIA</p>
                 <div class="create">
                     <img src="assets pro/asset 0.2.svg" alt="" height="20rem" id="plus">
@@ -63,23 +62,23 @@
                 <ul class="task-wrapper">
                     <li class="mini1" >
                         <img src="assets pro/clipboard-check.svg" alt="">
-                        <a class="mini1text" href="#test1" onclick="route()">Overview</a>
+                        <a class="mini1text" href="#test1">Overview</a>
                     </li>
                     <li class="mini1">
                         <img src="assets pro/list-todo.svg" alt="">
-                        <a class="mini1text" href="#test2" onclick="route()">List</a>
+                        <a class="mini1text" href="#test2">List</a>
                     </li>
                     <li class="mini1" id="vanished">
                         <img src="assets pro/bar-chart-horizontal-big.svg" alt="">
-                        <a class="mini1text" href="#test3" onclick="route()">Dashboard</a>
+                        <a class="mini1text" href="#test3" onclick="stored()">Dashboard</a>
                     </li>
                     <li class="mini1" id="vanished">
                         <img src="assets pro/message-circle-more.svg" alt="">
-                        <a class="mini1text" href="#test4" onclick="route()">Message</a>
+                        <a class="mini1text" href="#test4">Message</a>
                     </li>
                     <li class="mini1" id="vanished">
                         <img src="assets pro/paperclip.svg" alt="">
-                        <a class="mini1text" href="#test5" onclick="route()">Files</a>
+                        <a class="mini1text" href="#test5">Files</a>
                     </li>
                     <li class="mini1">
                         <p class="vanish">
@@ -162,12 +161,11 @@
                 <div id="test2">
                     <div class="lcontainer">
                         <div class="lwrapper">
-                            <!-- <div class="addtask"> -->
                             <div class="buttons">
                                 <div class="plus">
                                     <img src="../feeproject2/assets pro/asset 0.2.svg" width="20rem" height="20rem"
                                         alt="">
-                                    <p class="addtasktext">Add task</p>
+                                    <p class="addtasktext" >Add task</p>
                                 </div>
                                 <div class="delete">
                                     <img src="../feeproject2/assets pro/asset 0.2.svg" width="20rem" height="20rem"
@@ -178,7 +176,6 @@
                             <div class="tasks">
 
                                 <input type="text" class="taskadd">
-                                <!-- <ul class="tasklist"></ul> -->
                                 <table>
                                     <tr>
                                         <th>Task Name</th>
@@ -186,10 +183,9 @@
                                         <th>Priority</th>
                                         <th>Date</th>
                                     </tr>
-                                    <tbody class="tasklist"></tbody> <!-- Change here -->
+                                    <tbody class="tasklist"></tbody>
                                 </table>
                             </div>
-                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -213,7 +209,7 @@
                             </div>
                             <div class="box1">
                                 <p class="boxtext1">Incompleted Tasks</p>
-                                <p class="boxtext2">0</p>
+                                <p class="boxtext2" id="incomplete">0</p>
                                 <p class="boxtext3">Filter</p>
                             </div>
                             <div class="box1">
@@ -223,7 +219,7 @@
                             </div>
                             <div class="box1">
                                 <p class="boxtext1">Total Tasks</p>
-                                <p class="boxtext2">0</p>
+                                <p class="boxtext2" id="total">0</p>
                                 <p class="boxtext3">Filter</p>
                             </div>
                         </div>
@@ -259,7 +255,6 @@
                                     Send a message to kick off projects. Or discuss tasks. Or brainstorm ideas. You can
                                     also send messages from your email to project
                                 </p>
-                                <!-- <p class="conntext"></p> -->
                             </div>
                         </div>
                     </div>

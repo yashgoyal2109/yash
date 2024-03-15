@@ -1,6 +1,8 @@
 const prof=document.querySelector("#prof")
 prof.textContent=localStorage.getItem("user").charAt(0)
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const tabsContainer=document.querySelector(".minichanges")
     const tabsList=document.querySelector(".task-wrapper")
@@ -45,11 +47,15 @@ document.addEventListener("DOMContentLoaded", function() {
 const add = document.querySelector(".plus");
 const task = document.querySelector(".taskadd");
 const deleteall=document.querySelector(".delete")
+const incomplete=document.querySelector("#incomplete");
+const total=document.querySelector("#total");
 var graphcount =0;
+let count =0;
 
 add.addEventListener("click", (e) => {
   e.preventDefault();
   graphcount++;
+  
 
     //ADDING TASK NAME
 
@@ -57,6 +63,11 @@ add.addEventListener("click", (e) => {
 
 
 
+
+
+    count++;
+    total.innerHTML=count;
+    incomplete.innerHTML=count;
     yValues[0]++;
     chartBar.data.datasets[0].data = yValues;
     chartBar.update();
@@ -98,12 +109,7 @@ add.addEventListener("click", (e) => {
     date.setAttribute("type","date")
 
     date.classList.add("date-time")
-    // const currentDate = new Date();
-    // console.log(currentDate)
     tasklist.appendChild(row);
-    // const options = { month: 'long', day: 'numeric' };
-    // const formattedDate = currentDate.toLocaleDateString('en-US', options);
-    // date.textContent = formattedDate;
     row.appendChild(date);
 
 
@@ -116,6 +122,9 @@ add.addEventListener("click", (e) => {
 deleteall.addEventListener("click",()=>{
         
     yValues[0]=0;
+    count=0;
+    total.innerHTML=count;
+    incomplete.innerHTML=count;
     chartBar.data.datasets[0].data = yValues;
     chartBar.update();
     chartDoughnut.data.datasets[0].data = yValues;
@@ -143,11 +152,12 @@ chartBar=new Chart("barChart", {
             backgroundColor: barColors,
             data: yValues,
             barThickness: 40,
-            //   labels:task-count
         }]
     },
-    //   options: {...}
 });
+
+
+
 var xValues = ["to-do", "doing", "done"];
 var yValues = [0, 0, 0];
 var barColors = ["#a69ff3"];
@@ -160,7 +170,11 @@ chartDoughnut=new Chart("doughnutchart", {
             data: yValues
         }]
     },
-    //   options: {...}
 });
 
 
+
+function stored(){
+    var totaled=document.querySelector("#total").innerHTML;
+    var counted=localStorage.setItem("totaled",totaled);
+}

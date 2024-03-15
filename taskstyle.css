@@ -235,8 +235,10 @@
 }
 
 .mssg{
+    background-color: #2a2b2d;
     color: #f5f4f3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 40rem;
     border: 2px solid #3a3b3c;
     padding: 1rem;
     border-radius: 1rem;
@@ -403,6 +405,7 @@
     background-color: #1e1f21;
     height: 10%;
     width: 60%;
+    color: #f5f4f3;
     border: 3px solid #565557;
 }
 
